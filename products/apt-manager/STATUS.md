@@ -7,11 +7,11 @@ PM owns this current snapshot. Follow `playbooks/product-tracking.md`. Use “no
 | Field | Value |
 |---|---|
 | Product / objective | apt-manager / objective awaiting CEO brief |
-| Updated | 2026-10-10T00:39:17.202004+00:00 |
+| Updated | 2026-10-10T07:40:00+07:00 |
 | Phase | CEO brief |
 | Work state | awaiting CEO |
 | PM / active role or agent | Product Manager / no active delivery assignment |
-| Current task | Repository initialized; scope awaiting CEO brief |
+| Current task | Public repository created, pushed, and registered; business scope awaiting CEO brief |
 | Next action / owner / handoff target | Capture CEO brief / PM / BA after intake |
 
 ## Deliverables
@@ -37,7 +37,7 @@ Paths below are relative to the product folder. Link to existing files only.
 
 | Item / impact | Owner / next action | Source record |
 |---|---|---|
-| None recorded | — | — |
+| Business objective, users, success measures, constraints, and initial scope await intake | CEO / provide business brief; PM / capture and hand off to BA | [CEO intake](context/ceo-brief.md) |
 
 ## Build and Deployment
 
