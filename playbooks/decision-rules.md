@@ -1,0 +1,60 @@
+# Decision Rules
+
+Record and verify gate decisions using `product-tracking.md` and `templates/approval-record-template.md`. STATUS.md links to decision evidence; it cannot grant approval. These rules define authority; the tracking playbook defines how decisions are preserved.
+
+## Message routing and overall orchestration
+Owner: Product Manager by default
+The human user is CEO. Explicit CEO role or agent assignments take precedence for their stated scope. PM delegates and consolidates work without taking over specialist decision authority.
+
+## Project repository provisioning and portfolio coordination
+Owner: PM for project initiation; DevOps for repository provisioning; explicitly assigned Supervisor for coordination across projects
+Escalation: CEO for portfolio priorities, material trade-offs, or missing repository owner/visibility decisions
+
+Follow `project-initiation.md` for repository creation and `portfolio-supervision.md` for coordination. An explicit new-project request authorizes provisioning for the specified target; ask only for missing consequential identity or visibility choices. Provisioning and supervisor assignment do not satisfy requirements/design gates or authorize application deployment.
+
+## Product decisions
+Owner: Product Manager  
+Escalation: CEO
+
+## Business clarification decisions
+Owner: Business Analyst  
+Escalation: PM or CEO
+
+## Requirements approval
+Owner: CEO
+PM records approval of both `ceo-presentation.html` and `functional-spec.html` before handing their approved versions to the Solution Architect. BA and Architect may raise clarification questions; assumptions and unknown details remain explicit in their respective specifications. Material changes to approved requirements return to CEO through PM.
+
+## Design approval
+Owner: CEO
+PM submits `ceo-tech-presentation.html` with the supporting `technical-spec.html`, records approval of the design and document versions, and only then hands the package to the Tech Lead. Material design changes return to CEO through PM.
+
+## Architecture decisions
+Owner: Solution Architect  
+Escalation: CEO for major trade-offs
+
+## Execution and coding coordination
+Owner: Tech Lead
+
+## Implementation details
+Owner: Assigned Developer
+
+## Quality pass/fail assessment
+Owner: QA / Test Engineer
+
+## Build, release, deployment, environment decisions
+Owner: DevOps / Platform Engineer
+Follow `playbooks/deployment-rules.md` for the two deployment paths and first-time setup. A CEO request to "deploy" or "redeploy" authorizes publication of the requested product; ordinary change requests authorize local implementation, validation, and builds only.
+
+## Final release and priority decisions
+Owner: CEO
+
+## Escalation Triggers
+
+PM brings the following to the CEO with the relevant role's recommendation:
+
+- Material scope changes or conflicting requirements needing a business decision.
+- Architecture choices that introduce significant cost or complexity.
+- Conflicts between speed, quality, scope, and cost that exceed a role's authority.
+- High release risk or a delivery timeline that cannot be met.
+
+State the impact, options, recommendation, and work affected. Continue independent authorized work while the decision is pending; do not silently resolve a CEO trade-off inside implementation.

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "repository_context": "project",
+  "id": "apt-manager",
+  "repository_url": "https://github.com/nananetta/apt-manager",
+  "pm": "Product Manager",
+  "product_path": "products/apt-manager",
+  "company_source": {
+    "repository_url": "https://github.com/nananetta/ai-software-house-template",
+    "revision": "6e6e47c940332b15a54aa6f599ecf0dbcf68a469"
+  }
+}
